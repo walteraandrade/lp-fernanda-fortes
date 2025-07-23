@@ -57,7 +57,7 @@ h2 {
 p {
   margin-bottom: 1rem;
 }
-.site-header, .site-footer .footer-info {
+.site-header {
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -226,10 +226,12 @@ p {
 
   .site-footer .divider-plant {
     margin: 0;
+    max-width: 80px;
   }
 
   .footer-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
@@ -239,21 +241,23 @@ p {
   .site-footer h2 {
     color: var(--bg-color);
     font-size: 2.2rem;
+    text-align: left;
   }
 
   .site-footer .subtitle, .site-footer .crp {
     color: var(--bg-color);
     opacity: 0.8;
+    text-align: left;
   }
 
-  .footer-info {
+  .footer-info, .contact-info {
     text-align: left;
   }
 
   .contact-info {
-    text-align: left;
     font-size: 0.95rem;
   }
+
   .contact-info p {
     margin-bottom: 0.5rem;
   }
@@ -346,7 +350,7 @@ p {
       text-align: center;
     }
 
-    .footer-info {
+    .footer-info, .site-footer h2, .site-footer .subtitle, .site-footer .crp {
       text-align: center;
     }
 
