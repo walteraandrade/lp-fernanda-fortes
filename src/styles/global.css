@@ -78,7 +78,6 @@ p {
 
   .hero-container {
     background-color: #f8f3e8;
-    border: 1px solid var(--card-border-color);
     border-radius: 15px;
     padding: 1rem;
     margin-bottom: 3rem;
@@ -90,6 +89,7 @@ p {
     justify-content: center;
     gap: 2rem;
     padding: 1rem 0;
+    position: relative;
   }
 
   .hero-text {
@@ -182,42 +182,25 @@ p {
 
   .decorative-lines {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
-    opacity: 0.5;
   }
 
   .hero-lines {
-    top: 50%;
     left: 50%;
+    top: 88%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 450px;
+    max-width: 1200px;
   }
 
   .about-lines {
-    top: -2rem;
-    left: -2rem;
-    width: auto;
-    height: 120%;
-  }
-
-  .hero-text, .about-text {
-    position: relative;
-  }
-
-  .hero-text > *, .about-text > * {
-    position: relative;
-    z-index: 1;
+    display: none;
   }
 
   .divider-plant {
     max-width: 100px;
     margin: 0 auto 3rem auto;
-  }
-
-  .mobile-divider {
-    display: none;
   }
 
   .site-footer {
@@ -237,6 +220,19 @@ p {
     margin-bottom: 0.5rem;
   }
 
+  .desktop-divider {
+    display: block;
+  }
+  
+  @media (min-width: 769px) {
+    .about-lines {
+      display: block;
+      top: -2rem;
+      left: -2rem;
+      width: auto;
+      height: 120%;
+    }
+  }
   
   @media (max-width: 768px) {
     .mobile-box {
@@ -244,7 +240,29 @@ p {
       border-radius: 15px;
       padding: 1.5rem;
       margin-bottom: 2rem;
+      position: relative;
     }
+
+    .mobile-box::before {
+      content: '';
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 20px; 
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .features.mobile-box::before {
+      background-image: url('/src/assets/images/mobile_linha bege.png');
+    }
+
+    .about.mobile-box::before {
+      background-image: url('/src/assets/images/mobile_linha marrom.png');
+    }
+
     body {
       padding: 1.5rem;
     }
@@ -255,6 +273,7 @@ p {
 
     .hero-section {
       flex-direction: column;
+      position: relative;
     }
 
     .hero-plant {
@@ -291,12 +310,6 @@ p {
 
     .desktop-divider {
       display: none;
-    }
-
-    .mobile-divider {
-      display: block;
-      width: 100%;
-      margin: 2rem 0;
     }
   }
 
