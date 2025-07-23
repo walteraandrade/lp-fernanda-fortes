@@ -23,32 +23,32 @@ This document outlines the tasks required to make the website a faithful impleme
 ## Section-Specific Tasks
 
 ### Hero Section (`atendimento psicológico...`)
-- [ ] **Layout:**
-    - [ ] Wrap the entire section in a container.
-    - [ ] Style the container to have a light beige background, rounded corners, and a border, as per the design.
-- [ ] **Typography:**
-    - [ ] Remove the background color from the "especialista em..." text.
-    - [ ] Adjust font sizes and weights to match the design.
+- [X] **Layout:**
+    - [X] Wrap the entire section in a container.
+    - [X] Style the container to have a light beige background, rounded corners, and a border, as per the design.
+- [X] **Typography:**
+    - [X] Remove the background color from the "especialista em..." text.
+    - [X] Adjust font sizes and weights to match the design.
 
 ### Image Gallery
-- [ ] **Layout:**
-    - [ ] Ensure the desktop layout is a horizontal row with minimal spacing.
+- [X] **Layout:**
+    - [X] Ensure the desktop layout is a horizontal row with minimal spacing.
     - [ ] Ensure the mobile layout stacks the images vertically as shown in the design.
 
 ### Features Section (`modalidades presencial...`)
-- [ ] **Typography:**
-    - [ ] Adjust font sizes, weights, and line breaks to match the visual hierarchy of the design.
+- [X] **Typography:**
+    - [X] Adjust font sizes, weights, and line breaks to match the visual hierarchy of the design.
 
 ### About Me Section (`sobre mim`)
-- [ ] **Layout:**
-    - [ ] Left-align the "sobre mim" title on desktop.
-    - [ ] Justify the paragraph text.
+- [X] **Layout:**
+    - [X] Left-align the "sobre mim" title on desktop.
+    - [X] Justify the paragraph text.
 - [ ] **Mobile:**
     - [ ] Ensure the mobile layout includes the bordered box around the text.
 
 ### Footer
-- [ ] **Layout:**
-    - [ ] Add contact icons (phone, email, location).
+- [X] **Layout:**
+    - [X] Add contact icons (phone, email, location).
     - [ ] Adjust spacing and alignment to precisely match the design.
 - [ ] **Mobile:**
     - [ ] Ensure the mobile layout stacks the elements correctly within a bordered box.
