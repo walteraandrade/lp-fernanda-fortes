@@ -234,6 +234,12 @@ p {
 
   
   @media (max-width: 768px) {
+    .mobile-box {
+      border: 1px solid var(--card-border-color);
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
     body {
       padding: 1.5rem;
     }
@@ -253,7 +259,7 @@ p {
     }
 
     .gallery {
-      grid-template-columns: repeat(2, 1fr);
+      flex-direction: column;
     }
     .gallery-img {
       height: 150px;
