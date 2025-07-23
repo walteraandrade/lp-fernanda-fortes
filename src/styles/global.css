@@ -183,8 +183,8 @@ p {
   .decorative-lines {
     position: absolute;
     z-index: 0;
-    opacity: 0.6;
-    pointer-events: none; 
+    pointer-events: none;
+    opacity: 0.5;
   }
 
   .hero-lines {
@@ -192,13 +192,14 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
   }
 
   .about-lines {
-    top: 10%;
-    left: 0;
-    width: 100%;
+    top: -2rem;
+    left: -2rem;
+    width: auto;
+    height: 120%;
   }
 
   .hero-text, .about-text {
@@ -213,6 +214,10 @@ p {
   .divider-plant {
     max-width: 100px;
     margin: 0 auto 3rem auto;
+  }
+
+  .mobile-divider {
+    display: none;
   }
 
   .site-footer {
@@ -282,6 +287,16 @@ p {
 
     .contact-info {
       text-align: center;
+    }
+
+    .desktop-divider {
+      display: none;
+    }
+
+    .mobile-divider {
+      display: block;
+      width: 100%;
+      margin: 2rem 0;
     }
   }
 
