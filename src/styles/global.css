@@ -182,20 +182,29 @@ p {
 
   .decorative-lines {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     pointer-events: none;
   }
 
   .hero-lines {
     left: 50%;
-    top: 88%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 1200px;
+    max-width: 450px;
   }
 
   .about-lines {
     display: none;
+  }
+
+  .hero-text, .about-text {
+    position: relative;
+  }
+
+  .hero-text > *, .about-text > * {
+    position: relative;
+    z-index: 1;
   }
 
   .divider-plant {
