@@ -1,12 +1,12 @@
 :root {
-  --bg-color: #fdfaf2;
-  --primary-text-color: #6a5c43;
-  --secondary-text-color: #8c7d6b;
-  --accent-color: #b3c59b;
-  --card-border-color: #e8e0d1;
+  --bg-color: #FBF8F1;
+  --primary-text-color: #5C3D2E;
+  --secondary-text-color: #A89E8E;
+  --accent-color: #B3C59B;
+  --card-border-color: #E8E0D1;
 
-  --font-heading: 'Lora', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
 }
 
 html {
@@ -178,6 +178,36 @@ p {
   }
   .about-text p {
     text-align: justify;
+  }
+
+  .decorative-lines {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.6;
+    pointer-events: none; 
+  }
+
+  .hero-lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about-lines {
+    top: 10%;
+    left: 0;
+    width: 100%;
+  }
+
+  .hero-text, .about-text {
+    position: relative;
+  }
+
+  .hero-text > *, .about-text > * {
+    position: relative;
+    z-index: 1;
   }
 
   .divider-plant {

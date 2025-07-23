@@ -4,20 +4,20 @@ This document outlines the tasks required to make the website a faithful impleme
 
 ## General Tasks
 
-- [ ] **Fonts:**
-    - [ ] Identify the correct heading font from the design and replace 'Lora'.
-    - [ ] Identify the correct body font and replace 'Montserrat'.
-    - [ ] Host fonts locally or ensure correct Google Fonts import.
-- [ ] **Colors:**
-    - [ ] Use a color picker to get the exact hex codes from the design for:
+- [X] **Fonts:**
+    - [X] Identify the correct heading font from the design and replace 'Lora'.
+    - [X] Identify the correct body font and replace 'Montserrat'.
+    - [X] Host fonts locally or ensure correct Google Fonts import.
+- [X] **Colors:**
+    - [X] Use a color picker to get the exact hex codes from the design for:
         - Background (including the subtle texture/gradient).
         - Primary text color.
         - Secondary text color.
         - Accent colors.
-    - [ ] Update the CSS variables in `global.css`.
-- [ ] **Decorative Elements:**
-    - [ ] Extract the hand-drawn lines from the design or recreate them as SVG/PNG.
-    - [ ] Add the lines to the appropriate sections.
+    - [X] Update the CSS variables in `global.css`.
+- [X] **Decorative Elements:**
+    - [X] Extract the hand-drawn lines from the design or recreate them as SVG/PNG.
+    - [X] Add the lines to the appropriate sections.
     - [ ] Ensure the "plantinha" illustration is used as a divider and accent as shown in the design.
 
 ## Section-Specific Tasks
