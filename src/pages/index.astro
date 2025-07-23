@@ -1,16 +1,80 @@
 ---
+import Layout from '../layout/layout.astro';
+import { Image } from 'astro:assets';
 
+import plantinha from '../assets/images/plantinha.png';
+import img1 from '../assets/images/img_01.png';
+import img2 from '../assets/images/img_02.png';
+import img3 from '../assets/images/img_03.png';
+import img4 from '../assets/images/img_04.png';
+import profile from '../assets/images/profile.png';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Fernanda Fortes - Psicóloga Infanto-juvenil">
+  
+  <header class="site-header">
+    <h1>Fernanda Fortes</h1>
+    <p class="subtitle">psicóloga infanto-juvenil</p>
+    <p class="crp">CRP: 06/200772</p>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-text">
+        <h2>atendimento psicológico para</h2>
+        <h3 class="hero-highlight">crianças e adolescentes</h3>
+        <p class="specialist">especialista em Terapia Cognitivo Comportamental</p>
+      </div>
+      <div class="hero-plant">
+        <Image src={plantinha} alt="Ilustração de uma planta crescendo" />
+      </div>
+    </section>
+
+    <section class="gallery">
+      <Image src={img1} alt="Foto atendimento 1" class="gallery-img" />
+      <Image src={img2} alt="Foto atendimento 2" class="gallery-img" />
+      <Image src={img3} alt="Foto atendimento 3" class="gallery-img" />
+      <Image src={img4} alt="Foto atendimento 4" class="gallery-img" />
+    </section>
+
+    <section class="features">
+      <h2>modalidades presencial e online</h2>
+      <p>atendimento humanizado</p>
+      <p>ênfase na <strong>resolução de problemas</strong></p>
+      <p>ambiente <strong>acolhedor</strong></p>
+    </section>
+
+    <section class="about">
+      <div class="about-image">
+        <Image src={profile} alt="Foto da psicóloga Fernanda Fortes" />
+      </div>
+      <div class="about-text">
+        <h2>sobre mim</h2>
+        <p>A tarefa do psicólogo cognitivo é descobrir leis que estabeleçam conexões entre o comportamento e a variedade de aspectos e elementos com os quais o comportamento está relacionado, procurando encarar o problema de forma mais abrangente.</p>
+        <p>A terapia cognitivo-comportamental para adolescentes já produziu melhoras em diversos quadros, como depressão, ansiedade, transtornos alimentares e abuso de substâncias.</p>
+        <p>Entre outras estratégias, a TCC acrescenta atividades positivas e reforçadoras à rotina do paciente, além de reestruturar as crenças irracionais.</p>
+        <p>Na terapia com crianças, utilizamos a brincadeira para entrar no mundo da criança e na linguagem da criança, assim formamos uma boa aliança terapêutica. As crianças se expressam por meio da brincadeira e é por meio dela que conseguimos acessar e modificar cognições disfuncionais.</p>
+      </div>
+    </section>
+    
+    <div class="divider-plant">
+      <Image src={plantinha} alt="Ilustração de uma planta crescendo" />
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-info">
+      <h2>Fernanda Fortes</h2>
+      <p class="subtitle">Psicóloga Infanto-Juvenil</p>
+      <p class="crp">CRP: 06/200772</p>
+    </div>
+    <div class="contact-info">
+      <p><strong>Atendimento:</strong> seg a sex, das 9h às 19h</p>
+      <p>📞 (11) 9 8211-8595</p>
+      <p>✉️ fe_fortes80@hotmail.com</p>
+      <p>📍 Rua Tuiuti, 1612 - sala 3<br>Brooklin, São Paulo</p>
+    </div>
+  </footer>
+
+</Layout>
