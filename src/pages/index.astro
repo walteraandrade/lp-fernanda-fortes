@@ -1,92 +1,185 @@
 ---
-import Layout from '../layout/layout.astro';
-import { Image } from 'astro:assets';
+import Layout from "../layout/layout.astro";
+import { Image } from "astro:assets";
 
-import plantinha from '../assets/images/plantinha.png';
-import img1 from '../assets/images/img_01.png';
-import img2 from '../assets/images/img_02.png';
-import img3 from '../assets/images/img_03.png';
-import img4 from '../assets/images/img_04.png';
-import profile from '../assets/images/profile.png';
-import lines01 from '../assets/images/lines01.png';
-import lines02 from '../assets/images/lines02.png';
-import mobileLineBege from '../assets/images/mobile_linha bege.png';
-import mobileLineMarrom from '../assets/images/mobile_linha marrom.png';
+import plantinha from "../assets/images/plantinha.png";
+import img1 from "../assets/images/img_01.png";
+import img2 from "../assets/images/img_02.png";
+import img3 from "../assets/images/img_03.png";
+import img4 from "../assets/images/img_04.png";
+import profile from "../assets/images/profile.png";
+import lines01 from "../assets/images/lines01.png";
+import lines02 from "../assets/images/lines02.png";
+import mobileLineBege from "../assets/images/mobile_linha bege.png";
+import mobileLineMarrom from "../assets/images/mobile_linha marrom.png";
+import locale from "../assets/images/locale.png";
+import mail from "../assets/images/mail.png";
+import phone from "../assets/images/phone.png";
 ---
 
 <Layout title="Fernanda Fortes - Psicóloga Infanto-juvenil">
-  
-  <header class="site-header">
-    <h1>Fernanda Fortes</h1>
-    <p class="subtitle">psicóloga infanto-juvenil</p>
-    <p class="crp">CRP: 06/200772</p>
+  <header class="text-center">
+    <h1 class="text-6xl text-amber-950 font-semibold">
+      <i>Fernanda Fortes</i>
+    </h1>
+    <p class="text-yellow-600/85 text-2xl"><i>psicóloga infanto-juvenil</i></p>
+    <p class="text-yellow-600/85 text-2xl"><i>CRP: 06/200772</i></p>
   </header>
 
-  <main>
-    <div class="hero-container">
-      <section class="hero-section">
-        <div class="hero-text">
-          <h2>atendimento psicológico para</h2>
-          <h3 class="hero-highlight">crianças e adolescentes</h3>
-          <p class="specialist">especialista em Terapia Cognitivo Comportamental</p>
-          <Image src={lines01} alt="decorative lines" class="decorative-lines hero-lines" />
+  <main class="container mx-auto">
+    <div class="border-2 rounded-lg border-yellow-400 md:border-none px-2">
+      <section class="flex md:py-[75px] flex-col justify-start md:pl-[50px]">
+        <div class="md:w-[50%]">
+          <h2 class="text-yellow-600/85! text-4xl text-start">
+            atendimento psicológico para
+          </h2>
+          <h3 class="text-amber-950 text-4xl text-end font-semibold">
+            crianças e adolescentes
+          </h3>
+          <div class="h-[100px]"></div>
         </div>
-        <div class="hero-plant">
-          <Image src={plantinha} alt="Ilustração de uma planta crescendo" />
-        </div>
+        <div class="flex justify-center items-center">
+          <p class="text-center text-yellow-600/85 text-2xl">
+            especialista em Terapia Cognitivo Comportamental
+          </p>
+          </div>
       </section>
     </div>
 
-    <section class="gallery">
-      <Image src={img1} alt="Foto atendimento 1" class="gallery-img" />
-      <Image src={img2} alt="Foto atendimento 2" class="gallery-img" />
-      <Image src={img3} alt="Foto atendimento 3" class="gallery-img" />
-      <Image src={img4} alt="Foto atendimento 4" class="gallery-img" />
-    </section>
+    <div class="relative md:top-[-540px] md:mb-[-450px]">
+      <div class="absolute bg-red-50/50 h-[580px] w-full left-0 -z-1"></div>
+      <div class="absolute bg-orange-50/50 h-[580px] w-full left-0 -z-1"></div>
+      <Image
+        src={plantinha}
+        alt="Ilustração de uma planta crescendo"
+        class="h-[350px] w-[300px] relative left-[70%] hidden md:block"
+      />
+      <Image
+        src={lines01}
+        alt="decorative lines"
+        class="w-full max-w-[1240px] m-auto hidden md:block"
+      />
 
-
-    <section class="features mobile-box">
-      <h2>modalidades presencial e online</h2>
-      <p>atendimento humanizado</p>
-      <p>ênfase na <strong>resolução de problemas</strong></p>
-      <p>ambiente <strong>acolhedor</strong></p>
-    </section>
-
-
-    <section class="about mobile-box">
-      <div class="about-image">
-        <Image src={profile} alt="Foto da psicóloga Fernanda Fortes" />
-      </div>
-      <div class="about-text">
-        <Image src={lines02} alt="decorative lines" class="decorative-lines about-lines" />
-        <h2>sobre mim</h2>
-        <p>A tarefa do psicólogo cognitivo é descobrir leis que estabeleçam conexões entre o comportamento e a variedade de aspectos e elementos com os quais o comportamento está relacionado, procurando encarar o problema de forma mais abrangente.</p>
-        <p>A terapia cognitivo-comportamental para adolescentes já produziu melhoras em diversos quadros, como depressão, ansiedade, transtornos alimentares e abuso de substâncias.</p>
-        <p>Entre outras estratégias, a TCC acrescenta atividades positivas e reforçadoras à rotina do paciente, além de reestruturar as crenças irracionais.</p>
-        <p>Na terapia com crianças, utilizamos a brincadeira para entrar no mundo da criança e na linguagem da criança, assim formamos uma boa aliança terapêutica. As crianças se expressam por meio da brincadeira e é por meio dela que conseguimos acessar e modificar cognições disfuncionais.</p>
-      </div>
-    </section>
-    
-   
-  </main>
-
-  <footer class="site-footer">
-    <div class="divider-plant">
-      <Image src={plantinha} alt="Ilustração de uma planta crescendo" />
+      <div class="h-[50px]"></div>
+      <section class="flex justify-center flex-wrap">
+        <Image src={img1} alt="Foto atendimento 1" />
+        <Image src={img2} alt="Foto atendimento 2" />
+        <Image src={img3} alt="Foto atendimento 3" />
+        <Image src={img4} alt="Foto atendimento 4" />
+      </section>
     </div>
-    <div class="footer-content">
-      <div class="footer-info">
-        <h2>Fernanda Fortes</h2>
-        <p class="subtitle">Psicóloga Infanto-Juvenil</p>
-        <p class="crp">CRP: 06/200772</p>
+    
+    <div class="h-[50px]"></div>
+
+    <section class="whitespace-pre text-xl md:text-3xl md:text-5xl with-serif">
+      <div class="flex items-center justify-center gap-[8px]">
+        <p class="text-amber-400">modalidades</p>
+        <p class="text-amber-950 font-semibold">presencial</p>
+        <p class="text-amber-400">e online</p>
       </div>
-      <div class="contact-info">
-        <p><strong>Atendimento:</strong> seg a sex, das 9h às 19h</p>
-        <p>📞 (11) 9 8211-8595</p>
-        <p>✉️ fe_fortes80@hotmail.com</p>
-        <p>📍 Rua Tuiuti, 1612 - sala 3<br>Brooklin, São Paulo</p>
+
+
+      <div class="flex items-center justify-center gap-[8px]">
+        <p class="text-amber-400">atendimento</p>
+        <p class="text-amber-950 font-semibold">humanizado</p>
+      </div>
+
+
+      <div class="flex items-center justify-center gap-[8px]">
+        <p class="text-amber-400">ênfase na</p>
+        <p class="text-amber-950 font-semibold">resolução</p>
+        <p class="text-amber-400">de problemas</p>
+      </div>
+
+
+      <div class="flex items-center justify-center gap-[8px]">
+        <p class="text-amber-400">ambiente</p>
+        <p class="text-amber-950 font-semibold">acolhedor</p>
+      </div>
+    </section>
+
+    <section
+      class="flex md:flex-row flex-col-reverse justify-center items-center my-[75px] gap-[50px]"
+    >
+      <Image src={profile} alt="Foto da psicóloga Fernanda Fortes" />
+      <div class="container">
+        <h2 class="text-amber-950 font-bold text-4xl">sobre mim</h2>
+        <div class="h-[50px]"></div>
+
+        <div
+          class="text-amber-900 text-xl flex flex-col text-left border-2 rounded-xl border-yellow-400 md:border-none px-4 gap-[20px] md:pr-[200px]"
+        >
+          <p class="with-serif">
+            A tarefa do psicólogo cognitivo é descobrir leis que estabeleçam conexões entre o comportamento e a variedade de aspectos e elementos com os quais o comportamento está relacionado, procurando encarar o problema de forma mais abrangente.
+          </p>
+          <p class="with-serif">
+            A terapia cognitivo-comportamental para adolescentes já produziu melhoras em diversos quadros, como depressão, ansiedade, transtornos alimentares e abuso de substâncias.
+          </p>
+          <p class="with-serif">
+            Entre outras estratégias, a TCC acrescenta atividades positivas e reforçadoras à rotina do paciente, além de reestruturar as crenças irracionais.
+          </p>
+          <p class="with-serif">
+            Na terapia com crianças, utilizamos a brincadeira para entrar no mundo da criança e na linguagem da criança, assim formamos uma boa aliança terapêutica. As crianças se expressam por meio da brincadeira e é por meio dela que conseguimos acessar e modificar cognições disfuncionais.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="h-[100px]"></div>
+
+  <div class="absolute bg-red-50/50 h-[700px] top-[225%] w-full left-0 -z-1">
+  </div>
+  <div class="absolute bg-orange-50/50 h-[700px] top-[230%] w-full left-0 -z-1">
+  </div>
+
+  <div class="flex flex-col pl-[15%] mt-[-150px] relative">
+    <Image
+      src={plantinha}
+      alt="Ilustração de uma planta crescendo"
+      class="h-[400px] w-[400px] hidden md:block"
+    />
+    <Image src={lines01} alt="decorative lines" class="absolute bottom-[2%] hidden md:block" />
+  </div>
+
+  <div class="h-[50px]"></div>
+  <footer class="bg-yellow-700/20">
+    <div class="flex flex-col md:flex-row py-[50px] justify-between items-center container mx-auto md:p-[50px]">
+      <div>
+        <h2 class="text-amber-950 text-4xl font-semibold">
+          <i>Fernanda Fortes</i>
+        </h2>
+        <p class="text-white text-2xl">Psicóloga Infanto-Juvenil</p>
+        <p class="text-white text-2xl">CRP: 06/200772</p>
+      </div>
+        <div class="h-[50px] md:hidden"></div>
+
+      <div class="flex-1 text-end">
+        <p class="text-amber-950 font-semibold text-xl md:text-2xl">atendimento:</p>
+        <div class="text-white text-semibold text-xl md:text-2xl flex flex-col">
+          <p>seg a sex, das 9h às 19h</p>
+          <p>
+            <Image
+              src={phone}
+              alt="phone icon"
+              class="inline-block w-6 h-6 mr-2"
+            /> (11) 9 8211-8595
+          </p>
+          <p>
+            <Image
+              src={mail}
+              alt="mail icon"
+              class="inline-block w-6 h-6 mr-2"
+            /> fe_fortes80@hotmail.com
+          </p>
+          <p>
+            <Image
+              src={locale}
+              alt="locale icon"
+              class="inline-block w-6 h-6 mr-2"
+            /> Rua Tuiuti, 1612 - sala 3<br />Brooklin, São Paulo
+          </p>
+        </div>
       </div>
     </div>
   </footer>
-
 </Layout>
