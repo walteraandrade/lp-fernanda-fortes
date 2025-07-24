@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+
+interface Line {
+  regular?: string;
+  bold?: string;
+}
+
+interface Item {
+  src: ImageMetadata;
+  alt: string;
+  lines: Line[];
+  align: "left" | "right";
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="flex justify-center flex-wrap">
+  {
+    items.map((item) => (
+      <div class="flex flex-col px-auto items-center text-3xl with-serif pt-[4px] pb-[12px]">
+        <Image src={item.src} class="max-w-[250px]" alt={item.alt} />
+        <div class={`flex flex-col p-[4px] text-${item.align}`}>
+          {item.lines.map((line) => (
+            <p>
+              {line.regular && <span class="text-amber-400">{line.regular} </span>}
+              {line.bold && <span class="text-amber-950 font-semibold">{line.bold}</span>}
+            </p>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</section>
