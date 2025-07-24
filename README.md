@@ -1,47 +1,45 @@
-# Astro Starter Kit: Minimal
+# Fernanda Fortes - Psicóloga Infanto-juvenil
 
-```sh
-bun create astro@latest -- --template minimal
-```
+This is a landing page for the child psychologist Fernanda Fortes, built with Astro and Tailwind CSS.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## ✨ Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Responsive Design:** The landing page is fully responsive and looks great on both desktop and mobile devices.
+- **Astro:** The project is built with Astro, a modern static site builder that delivers fast and lightweight websites.
+- **Tailwind CSS:** The styling is done with Tailwind CSS, a utility-first CSS framework that allows for rapid UI development.
 
-## 🚀 Project Structure
+## 🚀 Getting Started
 
-Inside of your Astro project, you'll see the following folders and files:
+To get a local copy up and running, follow these simple steps:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. **Clone the repository:**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+   ```sh
+   git clone https://github.com/walteraandrade/lp-fernanda-fortes.git
+   ```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+2. **Install the dependencies:**
 
-Any static assets, like images, can be placed in the `public/` directory.
+   ```sh
+   bun install
+   ```
 
-## 🧞 Commands
+3. **Start the development server:**
 
-All commands are run from the root of the project, from a terminal:
+   ```sh
+   bun run dev
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+## Available Scripts
 
-## 👀 Want to learn more?
+- `bun run dev`: Starts the development server.
+- `bun run build`: Builds the project for production.
+- `bun run preview`: Previews the production build.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/walteraandrade/lp-fernanda-fortes/issues).
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
