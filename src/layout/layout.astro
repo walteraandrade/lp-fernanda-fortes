@@ -1,4 +1,8 @@
----
+--- 
+import { Image } from 'astro:assets';
+import deskBackground from "../assets/images/desk-background.jpeg";
+import mobileBackground from "../assets/images/mobile--background.jpeg";
+
 export interface Props {
 	title: string;
 }
@@ -24,8 +28,17 @@ const { title } = Astro.props;
 <style is:global>
 	@import '/src/styles/global.css';
 </style>
-	<body class="pt-[50px] pb-0 mb-0">
-		<slot></slot>
+	<body class="relative border-4 overflow-hidden">
+    <Image
+      src={deskBackground}
+      alt="background image"
+      class="absolute top-0 w-full h-full -z-10 hidden md:inline-block"
+    />
+    <Image
+      src={mobileBackground}
+      alt="background image"
+      class="absolute top-0 left-0 w-full h-full -z-10 md:hidden"
+    />
+		<slot />
 	</body>
 </html>
-
