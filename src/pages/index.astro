@@ -17,29 +17,39 @@ import mobileLineMarrom from "../assets/images/mobile_linha marrom.png";
 import locale from "../assets/images/locale.png";
 import mail from "../assets/images/mail.png";
 import phone from "../assets/images/phone.png";
-
 ---
 
 <Layout title="Fernanda Fortes - Psicóloga Infanto-juvenil">
-  
   <header class="text-center">
-    <h1 class="text-6xl text-amber-950 font-semibold">
+    <h1 class="text-6xl text-amber-950 font-semibold mt-[8px] md:mt-[24px]">
       <i>Fernanda Fortes</i>
     </h1>
+    <div class="relative h-[200px] md:hidden mx-auto w-full max-w-[1920px]">
+      <Image
+        src={plantinha}
+        alt="plantinha"
+        class="absolute left-[220px] top-0 size-[150px] md:size-[200px] -z-10"
+      />
+      <Image
+        src={lines01}
+        alt="line"
+        class="relative w-screen mx-auto top-[130px] -z-10"
+      />
+    </div>
     <p class="text-yellow-600/85 text-2xl"><i>psicóloga infanto-juvenil</i></p>
     <p class="text-yellow-600/85 text-2xl"><i>CRP: 06/200772</i></p>
   </header>
 
   <main class="container mx-auto">
     <div
-      class="border-2 rounded-lg border-yellow-400 md:border-none px-2 m-[8px]"
+      class="rounded-lg border-2 border-yellow-400 md:border-none px-2 m-[8px]"
     >
       <section class="flex md:py-[75px] flex-col justify-start md:pl-[50px]">
         <div class="md:w-[50%]">
           <h2 class="text-yellow-600/85! text-5xl text-start">
             atendimento psicológico para
           </h2>
-          <h3 class="text-amber-950 text-6xl text-end font-semibold">
+          <h3 class="text-amber-950 text-6xl text-end font-semibold break-keep">
             crianças e adolescentes
           </h3>
           <div class="h-[100px]"></div>
@@ -48,6 +58,20 @@ import phone from "../assets/images/phone.png";
           <p class="text-center text-yellow-600/85 text-2xl">
             especialista em Terapia Cognitivo Comportamental
           </p>
+        </div>
+        <div
+          class="relative hidden md:block mx-auto w-full max-w-[1920px] top-0"
+        >
+          <Image
+            src={plantinha}
+            alt="plantinha"
+            class="absolute right-[5vw] bottom-0 w-[200px] h-[200px] -z-10"
+          />
+          <Image
+            src={lines01}
+            alt="line"
+            class="absolute max-w-[1280px] mx-auto -bottom-[25px] w-full -z-10"
+          />
         </div>
       </section>
     </div>
@@ -90,13 +114,27 @@ import phone from "../assets/images/phone.png";
         ]}
       />
     </div>
-    <div
-      class="hidden md:flex justify-center flex-wrap gap-[50px]"
-    >
+    <div class="hidden md:flex justify-center flex-wrap gap-[50px]">
       <Image src={img1} class="max-w-[250px]" alt="Foto atendimento 1" />
       <Image src={img2} class="max-w-[250px]" alt="Foto atendimento 2" />
       <Image src={img3} class="max-w-[250px]" alt="Foto atendimento 3" />
       <Image src={img4} class="max-w-[250px]" alt="Foto atendimento 4" />
+    </div>
+    <div class="h-[50px]"></div>
+
+    <div
+      class="relative md:hidden mx-auto w-full max-w-[1920px] top-0 h-[200px]"
+    >
+      <Image
+        src={plantinha}
+        alt="plantinha"
+        class="absolute right-[5vw] bottom-0 w-[200px] h-[200px] -z-10"
+      />
+      <Image
+        src={lines01}
+        alt="line"
+        class="absolute max-w-[1280px] mx-auto bottom-[5px] w-full -z-10"
+      />
     </div>
   </main>
 
@@ -128,7 +166,7 @@ import phone from "../assets/images/phone.png";
     </div>
   </section>
 
-    <div class="h-[50px] hidden md:block"></div>
+  <div class="h-[50px] hidden md:block"></div>
 
   <section
     class="flex md:flex-row flex-col-reverse justify-center items-center gap-[50px]"
@@ -166,15 +204,43 @@ import phone from "../assets/images/phone.png";
       </div>
     </div>
   </section>
+  <div class="h-[100px]"></div>
+
+  <div
+    class="relative h-[200px] hidden md:block mx-auto w-full max-w-[1920px] top-0"
+  >
+    <Image
+      src={plantinha}
+      alt="plantinha"
+      class="absolute left-[250px] top-0 w-[200px] h-[200px] -z-10"
+    />
+    <Image
+      src={lines02}
+      alt="line"
+      class="relative max-w-[1280px] mx-auto top-[160px] w-full -z-10"
+    />
+  </div>
+
+   <div class="relative h-[200px] md:hidden mx-auto w-full max-w-[1920px]">
+      <Image
+        src={plantinha}
+        alt="plantinha"
+        class="absolute left-[220px] top-0 size-[150px] md:size-[200px] -z-10"
+      />
+      <Image
+        src={lines01}
+        alt="line"
+        class="relative w-screen mx-auto top-[130px] -z-10"
+      />
+    </div>
 </Layout>
-<div class="h-[100px]"></div>
 
 <footer class="bg-[#dabe90]">
   <div
     class="flex flex-col md:flex-row py-[50px] justify-between items-start container mx-auto md:p-[50px]"
   >
-    <div >
-      <h2 class="text-amber-950 text-6xl font-semibold">
+    <div class="text-center">
+      <h2 class="text-amber-950 text-6xl font-semibold ">
         <i>Fernanda Fortes</i>
       </h2>
       <p class="text-white text-2xl">Psicóloga Infanto-Juvenil</p>
@@ -182,7 +248,7 @@ import phone from "../assets/images/phone.png";
     </div>
     <div class="h-[50px] md:hidden"></div>
 
-    <div class="flex-1 text-end">
+    <div class="flex-1 text-end w-full px-[25px] md:px-[50px]">
       <p class="text-amber-950 font-semibold text-xl md:text-2xl">
         atendimento:
       </p>

@@ -2,6 +2,8 @@
 import { Image } from 'astro:assets';
 import deskBackground from "../assets/images/desk-background.jpeg";
 import mobileBackground from "../assets/images/mobile--background.jpeg";
+import plantinha from "../assets/images/plantinha.png";
+import lines01 from "../assets/images/lines01.png";
 
 export interface Props {
 	title: string;
@@ -16,7 +18,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Atendimento psicológico para crianças e adolescentes por Fernanda Fortes.">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/plantinha.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 
@@ -28,7 +30,7 @@ const { title } = Astro.props;
 <style is:global>
 	@import '/src/styles/global.css';
 </style>
-	<body class="relative border-4">
+	<body class="relative w-full">
     <Image
       src={deskBackground}
       alt="background image"
