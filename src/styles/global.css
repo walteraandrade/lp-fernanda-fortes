@@ -44,12 +44,3 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Playfair Display', serif;
   color: var(--color-primary);
 }
-
-.with-serif {
-  font-family: 'Playfair Display', serif;
-}
-
-.no-serif {
-  font-family: 'Domine', serif;
-  line-height: 1.6;
-}
