@@ -20,12 +20,12 @@ interface Props {
 const { items } = Astro.props;
 ---
 
-<section class="flex justify-center flex-wrap">
+<section class="flex justify-center flex-wrap gap-4">
   {
     items.map((item) => (
-      <div class="flex flex-col px-auto items-center text-3xl with-serif pt-[4px] pb-[12px]">
-        <Image src={item.src} class="max-w-[250px]" alt={item.alt} />
-        <div class={`flex flex-col p-[4px] text-${item.align}`}>
+      <div class="flex flex-col items-center text-3xl pt-1 pb-3">
+        <Image src={item.src} class="max-w-[250px]" alt={item.alt} loading="lazy" />
+        <div class={`flex flex-col p-1 ${item.align === "left" ? "text-left" : "text-right"}`}>
           {item.lines.map((line) => (
             <p>
               {line.regular && <span class="text-amber-400">{line.regular} </span>}
