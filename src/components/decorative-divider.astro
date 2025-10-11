@@ -1,0 +1,71 @@
+---
+import { Image } from "astro:assets";
+import plantinha from "../assets/images/plantinha.png";
+import lines01 from "../assets/images/lines01.png";
+import lines02 from "../assets/images/lines02.png";
+import mobileLineMarrom from "../assets/images/mobile_linha marrom.png";
+
+interface Props {
+  plantPosition: "left" | "right";
+  lineType?: "beige" | "brown";
+  variant?: "mobile" | "desktop" | "both";
+  class?: string;
+}
+
+const { plantPosition, lineType = "beige", variant = "both", class: className = "" } = Astro.props;
+
+const lineImage = lineType === "brown" ? lines02 : lines01;
+const mobileLineImage = lineType === "brown" ? mobileLineMarrom : lines01;
+
+const plantClasses = {
+  left: {
+    mobile: "left-[220px]",
+    desktop: "left-[250px]"
+  },
+  right: {
+    mobile: "right-[5vw]",
+    desktop: "right-[5vw]"
+  }
+};
+
+const visibilityClasses = {
+  mobile: "md:hidden",
+  desktop: "hidden md:block",
+  both: ""
+};
+---
+
+{variant === "desktop" || variant === "both" ? (
+  <div class={`relative h-[200px] ${visibilityClasses.desktop} mx-auto w-full max-w-[1920px] ${className}`}>
+    <Image
+      src={plantinha}
+      alt=""
+      aria-hidden="true"
+      class={`absolute ${plantClasses[plantPosition].desktop} top-0 w-[200px] h-[200px] -z-10`}
+    />
+    <Image
+      src={lineImage}
+      alt=""
+      aria-hidden="true"
+      class="relative max-w-[1280px] mx-auto top-[160px] w-full -z-10"
+    />
+  </div>
+) : null}
+
+{variant === "mobile" || variant === "both" ? (
+  <div class={`relative h-[200px] ${visibilityClasses.mobile} mx-auto w-full max-w-[1920px] ${className}`}>
+    <Image
+      src={plantinha}
+      alt=""
+      aria-hidden="true"
+      class={`absolute ${plantClasses[plantPosition].mobile} top-0 size-[150px] -z-10`}
+    />
+    <Image
+      src={mobileLineImage}
+      alt=""
+      aria-hidden="true"
+      class="relative w-screen mx-auto top-[130px] -z-10"
+    />
+  </div>
+) : null}
+

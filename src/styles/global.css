@@ -23,12 +23,11 @@
 }
 
 :root {
-  --color-primary: #5C3A21; /* Dark Brown */
-  --color-secondary: #F8F0E3; /* Light Beige */
-  --color-highlight: #C89F3B; /* Golden Yellow */
-  --color-text: #444444; /* Dark Grey */
-  --color-background: #FCFBF8; /* Very Light Cream */
-
+  --color-primary: #5C3A21;
+  --color-secondary: #F8F0E3;
+  --color-highlight: #C89F3B;
+  --color-text: #444444;
+  --color-background: #FCFBF8;
 }
 
 * {
@@ -42,5 +41,4 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Playfair Display', serif;
-  color: var(--color-primary);
 }
